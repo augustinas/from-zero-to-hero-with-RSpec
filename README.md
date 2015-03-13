@@ -9,7 +9,7 @@
 
 - How to Write Your Own Tests?  (Mark)
 
-- Advanced Topics - Configuration, Customisation, (Advanced Tests) (Rob, Joe)
+- [Extended Topics - Configuration, Customisation, Matchers ...] (./more_info.md)
 
 - [Powering Up - Where to learn more, get better, and other resources to nail your RSpec superpowers!](./online_resources.md)
 
