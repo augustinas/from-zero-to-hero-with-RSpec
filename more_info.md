@@ -17,10 +17,12 @@ Allowing you to see the description of tests that have passed, rather than a ser
     `rspec --color --format documentation`
 
  - By using a spec/spec_helper.rb file and inserting the following code into it. The *_spec.rb file must require the helper.
- `RSpec.configure do |config|
+```
+RSpec.configure do |config|
 config.color = true
 config.add_formatter("documentation")
-end`
+end
+```
  - In a project level .rspec file. By creating a .rspec file in your project root directory with the following inside or for all rspec operation on your computer (global) you can place the .rspec file in your root directory:
  `--color
   -- format documentation`
