@@ -15,4 +15,4 @@
 
 - [Installation Troubleshooting (a helping hand to Linux users)](./installation_issues.md)
 
-- Issues Found (Everybody)
+- [Issues Found](./other_issues.md) (Everybody)
