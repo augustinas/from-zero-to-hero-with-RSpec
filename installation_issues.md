@@ -34,13 +34,7 @@ gem install bundler
 ##Help! Those commands don’t work – I am generating more errors!##
 Don’t panic! Are you getting a message similar to this?
 
-```
-RVM is not a function, selecting rubies with 'rvm use ...' will not work.
-
-You need to change your terminal emulator preferences to allow login shell.
-Sometimes it is required to use `/bin/bash --login` as the command.
-Please visit https://rvm.io/integration/gnome-terminal/ for an example.
-```
+![RVM is not a function, selecting rubies with 'rvm use ...' will not work.](./screenies/rvm-not-a-function.png)
 
 I am willing to bet you are using Ubuntu if this is the case. All that has happened is the files that were updated when RVM was installed (`~/.profile` and `~/.bash_profile`) are not being read from your terminal when it is started. This has something to do with the terminal running from within a graphical environment, and thus is not a login shell. To remedy, simply add `[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"` to your `~/.bashrc` file, which _is_ called by the terminal when started ([AskUbuntu](http://askubuntu.com/questions/121073/why-bash-profile-is-not-getting-sourced-when-opening-a-terminal), [Greg’s Wiki](http://mywiki.wooledge.org/DotFiles)). If you’re lazy, you can just copy and paste the following into your terminal:
 
