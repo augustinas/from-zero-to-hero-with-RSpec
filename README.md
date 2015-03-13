@@ -3,7 +3,7 @@
 
 ##### OUTLINE #####
 
-- TDD explanation and Introduction to RSpec (Dan)
+- [TDD explanation and Introduction to RSpec (Dan)](./what_is_TDD.md)
 
 - Introduction - Install RSpec and Make Those Tests Green (Gus)
 
