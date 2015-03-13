@@ -1,4 +1,4 @@
-####**Configuring Rspec output**####
+#Configuring Rspec output#
 
 Rspec terminal output (STDOUT) can be configured to a users preference. As a basic functional setup the following can be useful to aid readability:
 
@@ -30,7 +30,7 @@ end
 Further configurations can be explored by running this in the terminal
 `rspec -- help`
 
-#### **Running specifications **####
+#Running specifications#
 Running rspec from the terminal has been explained in the introductions, it is possible to focus rspec to run only the tests you wish all the way down to a line number level, by using a pointer after the command.
 
     `rspec`
