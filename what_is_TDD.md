@@ -24,7 +24,7 @@ This means each time you add to your code, you only have to hit one button to te
 
 You can even use the free time gained from automating the process - to go for a nap, or watch a awesome youtube video! :) Automating boring jobs rocks.
 
-#To Zero point 1 - What is RSpec? #
+#Heading towards hero - What is RSpec? #
 
 R - Stands for Ruby
 Spec - Stands for Specification
@@ -59,7 +59,9 @@ Nowadays its actually quite hard to get hired if your not testing your code. Why
 
 - Testing makes you look at your own code through different eyes - whilst writing a test you often see ways to improve your own code and make it less smelly.
 
-- The more complex and awesome your code gets - the bigger the benefit of testing. You may be tempted to skip automated testing, when your just starting out and making simple tiny scripts only you will use. But can you imagine having to test 15 pages of web forms each time you update a site without automated test? Tests are a way that developers can make more complex programs/apps without having to do any more complicated/complex work.
+- The more complex and awesome your code gets the bigger the benefit of testing. You may be tempted to skip automated testing, when your just starting out and making simple tiny scripts only you will use. But can you imagine having to test 15 pages of web forms each time you update a site without automated test? Tests are a way that developers can make more complex programs/apps without having to do any more complicated/complex work.
 
+#So how do you add this awesome super power to your toolkit?#
 
+Please read the next section 'Getting started', so try testing out for real!
 

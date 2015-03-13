@@ -3,7 +3,7 @@
 
 ##### OUTLINE #####
 
-- [TDD explanation and Introduction to RSpec (Dan)](./what_is_TDD.md)
+- [TDD explanation and Introduction to RSpec](./what_is_TDD.md)
 
 - Introduction - Install RSpec and Make Those Tests Green (Gus)
 
@@ -11,7 +11,7 @@
 
 - Advanced Topics - Configuration, Customisation, (Advanced Tests) (Rob, Joe)
 
-- Seek More - Online Resources (Dan)
+- [Powering Up - Where to learn more, get better, and other resources to nail your RSpec superpowers!](./online_resources.md)
 
 - Intallation Troubleshooting (a helping hand to Linux users) (Mark)
 
