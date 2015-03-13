@@ -22,7 +22,7 @@ end
  - In a project level .rspec file. By creating a .rspec file in your project root directory with the following inside or for all rspec operation on your computer (global) you can place the .rspec file in your root directory:
 ```
 --color
--- format documentation
+--format documentation
 ```
 
 Further configurations can be explored by running this in the terminal
