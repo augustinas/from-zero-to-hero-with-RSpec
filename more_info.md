@@ -33,15 +33,17 @@ Running rspec from the terminal has been explained in the introductions, it is p
 
 
 Run all of the specifications in the current directory hierarchy .
-    `rspec`
+
+`rspec`
     
 Run tests in a specific directory
-    `rspec spec/models/`
+
+`rspec spec/models/`
     
 Runs specifications in a specific spec file
-    `rspec spec/cows_spec.rb`
 
-    `rspec spec/cows_spec.rb:10`
+`rspec spec/cows_spec.rb`
 
 Runs the nearest specification to a line number supplied.
-    `rspec spec/cows_spec.rb:10`
+
+`rspec spec/cows_spec.rb:10`
