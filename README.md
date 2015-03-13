@@ -9,10 +9,10 @@
 
 - How to Write Your Own Tests?  (Mark)
 
-- [Extended Topics - Configuration, Customisation, Matchers ...] (./more_info.md)
+- [Extended Topics - Configuration, Customisation, Matchers ...](./more_info.md)
 
 - [Powering Up - Where to learn more, get better, and other resources to nail your RSpec superpowers!](./online_resources.md)
 
-- Intallation Troubleshooting (a helping hand to Linux users) (Mark)
+- [Installation Troubleshooting (a helping hand to Linux users)](./installation_issues.md)
 
-- Issues Found (Everybody)
+- [Issues Found](./other_issues.md) (Everybody)
