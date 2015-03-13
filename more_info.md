@@ -2,11 +2,9 @@
 
 Rspec terminal output (STDOUT) can be configured to a users preference. As a basic functional setup the following can be useful to aid readability:
 
-Display passing tests as green and failing tests as red.
-    `color`
-
-Allowing you to see the description of tests that have passed, rather than a series of  '.....'
-    `format documentation`
+`color` Display passing tests as green and failing tests as red.
+    
+`format documentation` Allowing you to see the description of tests that have passed, rather than a series of  '.....'
 
 *These configurations can be set in various locations, including:*
 
@@ -22,7 +20,7 @@ config.add_formatter("documentation")
 end
 ```
  - In a project level .rspec file. By creating a .rspec file in your project root directory with the following inside or for all rspec operation on your computer (global) you can place the .rspec file in your root directory:
- ```
+```
 --color
 -- format documentation
 ```
