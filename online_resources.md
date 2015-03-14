@@ -19,8 +19,8 @@ Here's some of the awesome tutorials we've found useful:
 
 - [Ruby for Newbies RSpec tutorial - Youtube](https://www.youtube.com/watch?v=JhR9Ib1Ylb8&feature=relmfu) (Video)
 
--[An Intro to Test Driven Development - The FizzBuzz Kata, using Ruby. By Makers Academy on Youtube](https://www.youtube.com/watch?v=CHTep2zQVAc) (Video)
+- [An Intro to Test Driven Development - The FizzBuzz Kata, using Ruby. By Makers Academy on Youtube](https://www.youtube.com/watch?v=CHTep2zQVAc) (Video)
 
--[An introduction to RSpec - David Chelimsky](http://blog.davidchelimsky.net/blog/2007/05/14/an-introduction-to-rspec-part-i/) (Tutorial)
+- [An introduction to RSpec - David Chelimsky](http://blog.davidchelimsky.net/blog/2007/05/14/an-introduction-to-rspec-part-i/) (Tutorial)
 
 Please let us know if you have any you think we should link to from here! :)
