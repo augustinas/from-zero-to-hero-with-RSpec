@@ -3,7 +3,7 @@
 
 ##### OUTLINE #####
 
-- [TDD explanation and Introduction to RSpec](./what_is_TDD.md)
+- [From Zero - What the hell is testing, and why do developers use it?](./what_is_TDD.md)
 
 - Introduction - Install RSpec and Make Those Tests Green (Gus)
 
