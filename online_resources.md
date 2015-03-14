@@ -23,8 +23,8 @@ Here's some of the awesome tutorials we've found useful:
 
 - [An introduction to RSpec - David Chelimsky](http://blog.davidchelimsky.net/blog/2007/05/14/an-introduction-to-rspec-part-i/) (Tutorial)
 
-- [Equality Matchers - Testing for Equality in RSpec - Relish RSpec](https://www.relishapp.com/rspec/rspec-expectations/v/3-2/docs/built-in-matchers/equality-matchers)
+- [Equality Matchers - Testing for Equality in RSpec - Relish RSpec](https://www.relishapp.com/rspec/rspec-expectations/v/3-2/docs/built-in-matchers/equality-matchers) (Documentation)
 
-- [‘Be’ Matchers - Comparing Objects and Testing for ‘Truthiness’ in RSpec - Relish RSpec](https://www.relishapp.com/rspec/rspec-expectations/v/3-2/docs/built-in-matchers/be-matchers)
+- [‘Be’ Matchers - Comparing Objects and Testing for ‘Truthiness’ in RSpec - Relish RSpec](https://www.relishapp.com/rspec/rspec-expectations/v/3-2/docs/built-in-matchers/be-matchers) (Documentation)
 
 Please let us know if you have any you think we should link to from here! :)
