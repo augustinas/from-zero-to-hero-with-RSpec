@@ -1,4 +1,4 @@
-##I am getting deprecation warnings when I run RSpec – what have I broken now?##
+#I am getting deprecation warnings when I run RSpec – what have I broken now?#
 Messages like this:
 
 ![Deprecation Warnings:](./screenies/deprecation-warnings.png)
