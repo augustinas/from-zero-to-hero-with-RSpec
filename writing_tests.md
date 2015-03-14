@@ -115,8 +115,10 @@ Yey! A test has been run and passed! Great work!
 
 ####Expanding the Farm tests – Step 3####
 Going back to Step 0 again, we mentioned that we would like to keep track of the numbers of animals and machines on the farm. If you can’t remember that, it was where I mentioned the cow tucked under a person’s arm…
+
 …now you remember – good! So let’s go ahead and test for that…
-…well, see that’s not so easy – other than the explicit instance of farm we create to test that Farms can exist as Farms, we have no way of accessing the new Farm to test it further. We could always create a new Farm object for each test, but then we’re not testing the contents of the same Farm each time. Thus we need to tweak the test file a little first.
+
+…well, see that’s not so easy – other than the explicit instance of Farm we create to test that Farms can exist as Farms, we have no way of accessing the new Farm to test it further. We could always create a new Farm object for each test, but then we’re not testing the contents of the same Farm each time. Thus we need to tweak the test file a little first.
 
 ![Introducing before :all](./screenies/before-all.png "Introducing before :all")
 
@@ -132,8 +134,10 @@ It should be fairly straight-forward to see what is going on: we are running a t
 
 ![Boy that’s a lot of red text!](./screenies/farm-numbers-failed-output.png "Boy that’s a lot of red text!")
 
-As we can see two tests were performed, both of which failed with `NoMethodError`s. Not only that, but the tests also reveal what the expected value was: 0. So let’s fix that and try again:
+As we can see two tests were performed, both of which failed with a `NoMethodError`. Not only that, but the tests also reveal what the expected value was: 0. So let’s fix that and try again:
 
 ![Testing for numbers of farmyard items – attempt 2](./screenies/farm-numbers-passed.png "Testing for numbers of farmyard items – attempt 2")
 
 ![Now that’s a lot of green text!](./screenies/farm-numbers-passed-output.png "Now that’s a lot of green text!")
+
+Perfect!
