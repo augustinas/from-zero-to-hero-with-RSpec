@@ -63,5 +63,5 @@ Nowadays its actually quite hard to get hired if your not testing your code. Why
 
 #So how do you add this awesome super power to your toolkit?#
 
-Simply read the next section (Install RSpec and Make Those Tests Green)(./README.md), to try RSpec and automated testing out for yourself, and become a automation super hero!
+Simply read the next section [Install RSpec and Make Those Tests Green](./README.md), to try RSpec and automated testing out for yourself, and become a automation super hero!
 
