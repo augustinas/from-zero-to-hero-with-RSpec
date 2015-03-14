@@ -3,7 +3,7 @@
 
 ##### OUTLINE #####
 
-- [From Zero - What the hell is testing, and why do developers use it?](./what_is_TDD.md)
+- [From Zero - What The Hell Is Testing, And Why Do Developers Use It?](./what_is_testing.md)
 
 - Introduction - Install RSpec and Make Those Tests Green (Gus)
 
@@ -11,7 +11,7 @@
 
 - [Extended Topics - Configuration, Customisation, Matchers ...](./more_info.md)
 
-- [Powering Up - Where to learn more, get better, and other resources to nail your RSpec superpowers!](./online_resources.md)
+- [Powering Up - Where To Learn More, Get Better & Other Resources To Nail Your RSpec Superpowers!](./online_resources.md)
 
 - [Installation Troubleshooting (a helping hand to Linux users)](./installation_issues.md)
 
