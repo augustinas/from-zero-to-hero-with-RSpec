@@ -7,7 +7,7 @@
 
 - Introduction - Install RSpec and Make Those Tests Green (Gus)
 
-- How to Write Your Own Tests?  (Mark)
+- [How Do You Write Your Own Tests?](./writing_tests.md)
 
 - [Extended Topics - Configuration, Customisation, Matchers ...](./more_info.md)
 
