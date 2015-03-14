@@ -16,3 +16,5 @@ The next step is defining _what_ you want to test. This step is completed before
     - have a certain number of wheels
 
 It would also be wise to keep track of the number of animals and machines present on the farm, you know, so the police can be called if somebody’s lifted something…though I’m really struggling to picture a dudette/dude running down the road with a cow under their arm!
+
+Admittedly this example will not produce code that is particularly intricate, but I want to focus more on building the test statements than the Ruby code itself. I will therefore keep the code relatively simple.
