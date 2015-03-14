@@ -34,7 +34,7 @@ gem install bundler
 ##Help! Those commands don’t work – I am generating more errors!##
 Don’t panic! Are you getting a message similar to this?
 
-![RVM is not a function, selecting rubies with 'rvm use ...' will not work.](./screenies/rvm-not-a-function.png)
+![RVM is not a function, selecting rubies with 'rvm use ...' will not work.](./screenies/rvm-not-a-function.png "RVM is not a function, selecting rubies with 'rvm use ...' will not work.")
 
 I am willing to bet you are using Ubuntu if this is the case. All that has happened is the files that were updated when RVM was installed (`~/.profile` and `~/.bash_profile`) are not being read from your shell when it is started. This has something to do with the shell running from within a graphical environment, and thus is not a login shell. To remedy, run the command:
 ```bash
