@@ -41,7 +41,7 @@ Well, that doesn’t look good! What happened there? Well, at the very top of th
 cannot load such file -- /home/mark/Doiciméad/Academic/Ronin/Current/farm (LoadError)
 ```
 
-This is telling you that in line 1 of the farm_spec.rb file, there is a Ruby command `require_relative` that failed to execute correctly. Why? Well, it `cannot load such file` called `farm`. This makes sense because we haven’t created it yet. The rest of the output is known as a ‘stack trace’ and outlines all the method calls in all the classes that were running when the `LoadError` occurred. This is not useful to us for this tutorial, but stack traces will be useful for finding errors in your code in future projects, so it is good to know.
+This is telling you that in line 1 of the `farm_spec.rb` file, there is a Ruby command `require_relative` that failed to execute correctly. Why? Well, it `cannot load such file` called `farm`. This makes sense because we haven’t created it yet. The rest of the output is known as a ‘stack trace’ and outlines all the method calls in all the classes that were running when the `LoadError` occurred. This is not useful to us for this tutorial, but stack traces will be useful for finding errors in your code in future projects, so it is good to know.
 
 So let’s fix this error by creating the `farm.rb` file:
 ```bash
@@ -54,3 +54,20 @@ rspec farm_spec.rb
 ![Well that looks good, doesn’t it?](./screenies/no-examples.png)
 
 Better! Or is it? It looks like all tests have passed, so can we go home now? No yet: the output tells us `no examples found`. That’s because there are no tests to perform – we haven’t written them yet!
+
+####Writing the first test – Step 2####
+Going back to the English description of the project in Step 0, the first thing we outlined was that there was going to be a farm. So lets test that a farm exists:
+![describe Farm](./screenies/describe-farm.png)
+![Oh oh! Not again!](./screenies/describe-farm-output.png)
+
+Another load of errors. Again we can trace the error by looking at the first line of the output:
+```
+/home/mark/Doiciméad/Academic/Ronin/Current/farm_spec.rb:3:in `<top (required)>':
+uninitialized constant Farm (NameError)
+```
+So on line 3 of our test file there is an `uninitialized constant Farm`. In other words, the test file is looking for a `Farm` class, but can’t find it. So let’s fix that by adding it to our `farm.rb`:
+![class Farm](./screenies/class-farm.png)
+and then rerun the test suite:
+![Same as before](./screenies/class-farm-output.png)
+
+No errors, but we still haven’t done any _useful_ testing. All that’s being tested at this point is that there is a declaration of a Farm class in the code.
