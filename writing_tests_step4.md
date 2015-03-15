@@ -24,9 +24,9 @@ That’s produced a lot of output! If it’s a little overwhelming, you can run 
 
 With regards to the results, it should be obvious by now what is happening. For each test that has failed, the test was expecting that the method (or variable) specified was initialised and contained `nil`. In reality it couldn’t find the variable (as indicated by `NoMethodError: undefined method`). Now you should have enough information to fix the problem. Try it yourself first, but if you’re stuck you can have a look at the solution I suggest. Note that there is more than one way to skin a cat, so if your solution works and is different to that suggested, then great!
 
-![Animal testing is great (third time lucky)!](./screenies/animal-testing-better.png "Animal testing is great (third time lucky)!")
+![Animal testing is great (third time lucky)!](./screenies/animal-testing-good.png "Animal testing is great (third time lucky)!")
 
-![Animal testing is great (finally)!](./screenies/animal-testing-better-output.png "Animal testing is great (finally)!")
+![Animal testing is great (finally)!](./screenies/animal-testing-good-output.png "Animal testing is great (finally)!")
 
 Good work!
 
