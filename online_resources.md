@@ -27,4 +27,8 @@ Here's some of the awesome tutorials we've found useful:
 
 - [‘Be’ Matchers - Comparing Objects and Testing for ‘Truthiness’ in RSpec - Relish RSpec](https://www.relishapp.com/rspec/rspec-expectations/v/3-2/docs/built-in-matchers/be-matchers) (Documentation)
 
+- [Style guide to writing awesome RSpec - BetterSpecs](http://betterspecs.org/) (Style Guide)
+
+- [An indepth look at the full functionality of the pending spec - Virtual Nomad](http://www.jwhitmire.com/?p=6) (Blog)
+
 Please let us know if you have any you think we should link to from here! :)
