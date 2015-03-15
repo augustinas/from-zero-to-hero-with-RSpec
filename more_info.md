@@ -3,7 +3,7 @@
 Rspec terminal output (STDOUT) can be configured to a users preference. As a basic functional setup the following can be useful to aid readability:
 
 `color` Display passing tests as green and failing tests as red.
-    
+
 `format documentation` Allowing you to see the description of tests that have passed, rather than a series of  '.....'
 
 *These configurations can be set in various locations, including:*
@@ -35,11 +35,11 @@ Running rspec from the terminal has been explained in the introductions, it is p
 Run all of the specifications in the current directory hierarchy .
 
 `rspec`
-    
+
 Run tests in a specific directory
 
 `rspec spec/models/`
-    
+
 Runs specifications in a specific spec file
 
 `rspec spec/cows_spec.rb`
@@ -97,3 +97,44 @@ end
 *Note: The above test is not a good example of spec structure(multiple expectations), it's more to illustrate the concept in a simple way.*
 
 Check out the [Better Specs Guide](http://betterspecs.org/) to find out why.
+
+
+#There's Method in the Matchers#
+
+In RSpec there are many ways to compare the result of an example with what you expect. The most basic way you may have seen in Ruby to check if things match is `==`, but this doesn't work in RSpec, so `eq()` is used in its place. These methods are called "Matchers" and this section describes some of the most useful ones.
+
+##Comparison Matchers##
+
+`be >`, `be <`, `be >=`, `be <=` are fairly self explanatory and implement the comparison operators like in normal Ruby code.
+`be_within(margin_of_error).of(expected)` is useful for comparing numerical results within a certain margin of error of the expected result.
+`be_between(minimum, maximum).inclusive` checks if the result is in the given range inclusive of minimum and maximum. For an exclusive range replace `.inclusive` with `.exclusive`.
+`match(/regExp/)` is used in RSpec instead of the `=~` operator for comparing results with regular expressions.
+
+##Custom Matchers##
+
+###Predicates###
+
+Predicates are methods in Ruby which, by convention, end with a question mark; `?`. This is to signify that the return value will be either `true` or `false`. RSpec has a really useful shortcut for testing any of these methods even if you wrote the method yourself. It does this by creating matchers for you.
+
+The simplest illustration of this is using the pre-existing method `empty?`. This checks if Strings or Arrays are empty and returns `true` if they are or `false` if they are not. In RSpec you can test this method with `be_empty` which would be used like this: `expect(empty_string).to be_empty`.
+
+RSpec makes equivalent matchers  for your own methods by following the same simple pattern of adding 'be_' to the beginning and removing the question mark from the end. These are some methods and how they could be used as matchers:
+Method: `paid?` Matcher: `be_piad`
+Method: `full?` Matcher: `be_full`
+Method: `electrically_charged?` Matcher: `be_elictrically_charged`
+
+Similarly `has_key?(:key)` can be used in matcher form as `have_key(:key)`, which applies to all predicates starting with `has_` and taking an argument.
+
+###Other###
+
+You can make your own matchers from scratch, including your own default and failure messages. Look [here](https://www.relishapp.com/rspec/rspec-expectations/v/2-4/docs/custom-matchers/define-matcher) for information on how to do that.
+
+##Truthiness##
+
+In typical ruby fashion, testing truthiness in RSpec looks like some pretty natural language. To check if something is exactly 'true' you simply state `be true` after `expect(actual).to`, or to check if it's anything truthy (anything but `nil` or `false`) you just use `be_truthy`. The same applies to checking things `falsiness` with the matchers `be_falsey` and `be false`.
+
+##Errors##
+
+When checking for raised errors one must pass a block into the `expect` method instead of an argument as usual. So you might say:
+`expect { erroneous_method }.to raise_error`
+You can pass up to two arguments into `raise_error`, an `ErrorClass`, or a message as a `String`.
