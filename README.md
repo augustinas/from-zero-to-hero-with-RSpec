@@ -7,7 +7,7 @@
 
 - [Introduction - Install RSpec and Make Those Tests Green](./make_it_pass_morse.md)
 
-- [How Do You Write Your Own Tests?](./writing_tests.md)
+- [How Do You Write Your Own Tests?](./writing_tests_preamble.md)
 
 - [Extended Topics - Configuration, Customisation, Matchers ...](./more_info.md)
 
