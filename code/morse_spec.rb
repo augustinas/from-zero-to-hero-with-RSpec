@@ -1,68 +1,64 @@
 # Tests to pass for Morse tutorial
 
-require_relative '. morse'
+require_relative './spec_helper'
 
 describe Morse do
 
-  describe "should be constructed with options hash" do
-    describe "to accept phrases" do
-      it "stores the phrase as instance variable" do
-        @str = Morse.new(:str: "CONVERT ME TO MORSE")
-        @str.string.should eql "CONVERT ME TO MORSE"
+describe "#new" do
+    context "initializes with options hash" do
+      it "stores a given string" do
+        @str = Morse.new(:str => "CONVERT ME TO MORSE")
+        expect(@str.string).to eql "CONVERT ME TO MORSE"
       end
-    end
 
-    describe "to accept morse code" do
-      it "store the code as an instance variabe" do
-        @mor = Morse.new(:morse: "-.-- --- ..-   -.-. .- -. -. --- -   - . .-.. .-..   .-- .... .- -   ..   .- --   ... .- -.-- .. -. --.")
-        @mor.morse_code.should eql "-.-- --- ..-   -.-. .- -. -. --- -   - . .-.. .-..   .-- .... .- -   ..   .- --   ... .- -.-- .. -. --."
+      it "store a given Morse code" do
+        @mor = Morse.new(:morse => "-.-- --- ..-   -.-. .- -. -. --- -   - . .-.. .-..   .-- .... .- -   ..   .- --   ... .- -.-- .. -. --.")
+        expect(@mor.morse_code).to eql "-.-- --- ..-   -.-. .- -. -. --- -   - . .-.. .-..   .-- .... .- -   ..   .- --   ... .- -.-- .. -. --."
       end
-    end
 
-    describe "fails elegantly when no hash is given" do
-      it "sets instance variables to 'false' by default" do
-        Morse.new.string.should be_falsy
-        Morse.new.morse_code.should be_falsy
+      it "sets absent instance variables to 'false'" do
+        expect(Morse.new.string).to eql false
+        expect(Morse.new.morse_code).to eql false
       end
     end
   end
 
-  describe "converts input to two dimensional array" do
+  describe "#represent_as_array" do
     it "can represent strings as two dimensional array" do
-      @str.represent_as_array.should eql [%W[C O N V E R T], %W[M E], %W[T O], %W[M O R S E]]
+      expect(@str.represent_as_array).to eql [%W[C O N V E R T], %W[M E], %W[T O], %W[M O R S E]]
     end
 
     # it "checks and removes invalid characters" do
-    #   Morse.new(:str: "WHAT% IS -*-HAPPENING?").represent_as_array.shoul eql [%W[W H A T], %W[I S], %W[H A P P E N I N G]]
+    #   Morse.new(:str => "WHAT% IS -*-HAPPENING?").represent_as_array.shoul eql [%W[W H A T], %W[I S], %W[H A P P E N I N G]]
     # end
 
     # it "ensures characters are in capital case" do
-    #   Morse.new(:str: "What Is Happening").represent_as_array.shoul eql [%W[W H A T], %W[I S], %W[H A P P E N I N G]]
+    #   Morse.new(:str => "What Is Happening").represent_as_array.shoul eql [%W[W H A T], %W[I S], %W[H A P P E N I N G]]
     # end
 
     it "can represent Morse code as two dimensional array" do
-      @mor.represent_as_array.should eql [%W[-.-- --- ..-], %W[-.-. .- -. -. --- -], %W[- . .-.. .-..], %W[.-- .... .- -], %W[..], %W[.- --], %W[... .- -.-- .. -. --.]
+      expect(@mor.represent_as_array).to eql [%W[-.-- --- ..-], %W[-.-. .- -. -. --- -], %W[- . .-.. .-..], %W[.-- .... .- -], %W[..], %W[.- --], %W[... .- -.-- .. -. --.]]
     end
 
     # it "removes leading and trailing whitespace" do
-    #   Morse.new(:morse: "     -.- . . .--.   --. --- .. -. --.   ").represent_as_array.should eql [%W[-.- . . .--.], %W[--. --- .. -. --.]]
+    #   Morse.new(:morse => "     -.- . . .--.   --. --- .. -. --.   ").represent_as_array.should eql [%W[-.- . . .--.], %W[--. --- .. -. --.]]
     # end
   end
 
-  describe "encodes Morse code" do
+  describe "#encodes" do
     it "converts strings to Morse code" do
-      @str.encode.should eql "-.-. --- -. ...- . .-. -   -- .   - ---   -- --- .-. ... ."
+      expect(@str.encode).to eql "-.-. --- -. ...- . .-. -   -- .   - ---   -- --- .-. ... ."
       @str.string = "OH SUNNY DAY"
-      @str.encode.should eql "--- ....   ... ..- -. -. -.--   -.. .- -.--"
+      expect(@str.encode).to eql "--- ....   ... ..- -. -. -.--   -.. .- -.--"
     end
   end
 
-  decribe "decodes Morse code" do
-    it "converts Morse cod into string" do
-      @mor.decode.should eql "YOU CANNOT TELL WHAT I AM SAYING"
+  describe "#decode" do
+    it "converts Morse code into string" do
+      expect(@mor.decode).to eql "YOU CANNOT TELL WHAT I AM SAYING"
 
       @mor.morse_code = ".-. .- .. -. -.--   -.. .- -.--"
-      @mor.decode.should eql "RAINY DAY"
+      expect(@mor.decode).to eql "RAINY DAY"
     end
   end
 end
