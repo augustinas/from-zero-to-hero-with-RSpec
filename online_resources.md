@@ -15,7 +15,7 @@ Here's some of the awesome tutorials we've found useful:
 
 - [Roman Numerals Kata - Ruby and Test Driven Development. By Makers Academy on Youtube](https://www.youtube.com/watch?v=b0A6OKHtez4) (Video)
 
-- [CodeSchool intro to RSpec](http://rspec.codeschool.com/levels/1) (Interactive Coding)
+- [CodeSchool intro to RSpec](http://rspec.codeschool.com/levels/1) (Paid for after free first lesson, Interactive Coding)
 
 - [Ruby for Newbies RSpec tutorial - Youtube](https://www.youtube.com/watch?v=JhR9Ib1Ylb8&feature=relmfu) (Video)
 
