@@ -127,7 +127,7 @@ Similarly `has_key?(:key)` can be used in matcher form as `have_key(:key)`, whic
 
 ###Other###
 
-You can make your own matchers from scratch, including your own default and failure messages. Look here[https://www.relishapp.com/rspec/rspec-expectations/v/2-4/docs/custom-matchers/define-matcher] for information on how to do that.
+You can make your own matchers from scratch, including your own default and failure messages. Look [here](https://www.relishapp.com/rspec/rspec-expectations/v/2-4/docs/custom-matchers/define-matcher) for information on how to do that.
 
 ##Truthiness##
 
