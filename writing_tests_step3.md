@@ -28,3 +28,5 @@ As we can see two tests were performed, both of which failed with a `NoMethodErr
 Perfect!
 
 [← Writing the first test – Step 2](./writing_tests_step2.md)
+
+[Adding animals – Step 4 →](./writing_tests_step4.md)
