@@ -45,4 +45,6 @@ rspec farm_spec.rb
 
 Better! Or is it? It looks like all tests have passed, so can we go home now? No yet: the output tells us `no examples found`. That’s because there are no tests to perform – we haven’t written them yet!
 
-[← A little preamble – Step 0](./writing_tests_preamble.md)[Writing the first test – Step 2 →](./writing_tests_step2.md)
+[← A little preamble – Step 0](./writing_tests_preamble.md)
+
+[Writing the first test – Step 2 →](./writing_tests_step2.md)

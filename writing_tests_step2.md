@@ -45,4 +45,6 @@ So, what happens when `rspec farm_spec.rb` is run?
 
 Yey! A test has been run and passed! Great work!
 
-[← Setting up the test file – Step 1](./writing_tests_step1.md)[Expanding the Farm tests – Step 3 →](./writing_tests_step3.md)
+[← Setting up the test file – Step 1](./writing_tests_step1.md)
+
+[Expanding the Farm tests – Step 3 →](./writing_tests_step3.md)
