@@ -5,7 +5,7 @@
 
 - [From Zero - What The Hell Is Testing, And Why Do Developers Use It?](./what_is_testing.md)
 
-- [Introduction - Install RSpec and Make Those Tests Green](./make_it_pass_morse.md)
+- [Testing, Testing, 1, 2, 3...](./morse/morse_0.md)
 
 - [How Do You Write Your Own Tests?](./writing_tests_preamble.md)
 
