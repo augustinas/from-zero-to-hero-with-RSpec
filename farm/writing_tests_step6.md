@@ -11,7 +11,7 @@ This should give you enough information already to write your own tests. Use the
 
 Again, try to make the tests pass by yourself before looking at the solution.
 
-![“The wheels on the combine go round and round…”](../screenies/machine-testing-rspec.png "“The wheels on the combine go round and round…”")
+![“The wheels on the combine go round and round…”](../screenies/machine-testing-ruby.png "“The wheels on the combine go round and round…”")
 
 ![Ooo! “Everything’s shiny, cap’n: AOK!”](../screenies/machine-testing-passed.png "Ooo! “Everything’s shiny, cap’n: AOK!”")
 
