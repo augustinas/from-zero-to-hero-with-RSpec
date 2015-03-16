@@ -13,17 +13,17 @@ Had we wanted to create a new Farm object for each test, we could’ve used `bef
 
 Now that we have a reference to a Farm object, we can write tests to check the number of animals and machines on that Farm:
 
-![Testing for numbers of farmyard items](../screenies/farm-numbers-failed.png "Testing for numbers of farmyard items")
+![Testing for numbers of farmyard items](../screenies/farm-numbers-rspec.png "Testing for numbers of farmyard items")
 
 It should be fairly straight-forward to see what is going on: we are running a test to see if `@farm`’s instance variables `number_of_animals` and `number_of_machines` are initialised to zero. Running `rspec` gives:
 
-![Boy that’s a lot of red text!](../screenies/farm-numbers-failed-output.png "Boy that’s a lot of red text!")
+![Boy that’s a lot of red text!](../screenies/farm-numbers-failed.png "Boy that’s a lot of red text!")
 
 As we can see two tests were performed, both of which failed with a `NoMethodError`. Not only that, but the tests also reveal what the expected value was: 0. So let’s fix that and try again:
 
-![Testing for numbers of farmyard items – attempt 2](../screenies/farm-numbers-passed.png "Testing for numbers of farmyard items – attempt 2")
+![Testing for numbers of farmyard items – attempt 2](../screenies/farm-numbers-ruby.png "Testing for numbers of farmyard items – attempt 2")
 
-![Now that’s a lot of green text!](../screenies/farm-numbers-passed-output.png "Now that’s a lot of green text!")
+![Now that’s a lot of green text!](../screenies/farm-numbers-passed.png "Now that’s a lot of green text!")
 
 Perfect!
 
