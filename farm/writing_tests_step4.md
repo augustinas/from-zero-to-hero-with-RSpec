@@ -1,4 +1,4 @@
-####Adding animals – Step 4####
+####Adding Animals – Step 4####
 Right, so now that we have the Farm class tested and working, let’s test that we can create animals to go on our Farm. Remember the criteria we laid out in Step 0?
 - animals, which:
   - make a noise
@@ -31,3 +31,5 @@ With regards to the results, it should be obvious by now what is happening. For 
 Good work!
 
 [← Expanding the Farm tests – Step 3](./writing_tests_step3.md)
+
+[Extending Animals – Step 5 →](./writing_tests_step5.md)
