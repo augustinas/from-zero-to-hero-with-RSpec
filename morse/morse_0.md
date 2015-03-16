@@ -34,10 +34,11 @@ Almost there! The last thing we need to do is to tell RSpec that we want to crea
 rspec --init
 ```
 Your terminal window should be saying something like that:
-
+![Terminal Window](../screenies/morse/setup_terminal_window.png)
 And you aim to have the following file structure at this stage:
-
+![File Structure](../screenies/morse/setup_terminal_window.png)
 For this first example we have prepared tests for you.
 
 Now, let's start testing!
+
 [----> Step 1](./morse_1.md)
