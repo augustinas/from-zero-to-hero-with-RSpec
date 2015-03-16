@@ -36,7 +36,7 @@ rspec --init
 Your terminal window should be saying something like that:
 ![Terminal Window](../screenies/morse/setup_terminal_window.png)
 And you aim to have the following file structure at this stage:
-![File Structure](../screenies/morse/setup_terminal_window.png)
+![File Structure](../screenies/morse/folder_structure.png)
 For this first example we have prepared tests for you.
 
 Now, let's start testing!
