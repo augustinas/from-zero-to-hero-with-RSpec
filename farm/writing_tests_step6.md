@@ -18,3 +18,5 @@ Again, try to make the tests pass by yourself before looking at the solution.
 So that’s it, isn’t it? All tests passed! Well, not quite. We have inadvertently broken one of our first tests without realising it…
 
 [← Extending Animals – Step 5](./writing_tests_step5.md)
+
+[Tying up loose ends – Step 7 →](./writing_tests_step7.md)
