@@ -29,7 +29,7 @@ OK, so what the foobar is going on here? Lines 3 and 7 form a block that describ
 
 The `it` statement takes in a string as an argument; this string describes in English the behaviour that is expected from the rest of the block.
 
-This leaves a single line that outlines the test to be performed and the expected result. Note the syntax here – this is the ‘newer’ version of the syntax (by newer I mean since 2012, so not all that new!). There are many test suites floating around the Internet that use a much different syntax (see the [Issues Found](./other_issues.md) section for more details), and you _will_ come across them soon if you haven’t done so already. Don’t let this confuse you.
+This leaves a single line that outlines the test to be performed and the expected result. Note the syntax here – this is the ‘newer’ version of the syntax (by newer I mean since 2012, so not all that new!). There are many test suites floating around the Internet that use a much different syntax (see the [Issues Found](../other_issues.md) section for more details), and you _will_ come across them soon if you haven’t done so already. Don’t let this confuse you.
 
 So what does line 5 actually do? Well, it is expecting that the new instance of the Farm created with `Farm.new` is indeed a member of the Farm class. This is equivalent to checking that:
 
