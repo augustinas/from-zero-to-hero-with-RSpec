@@ -18,7 +18,7 @@ Now run the (very limited) test suite from the terminal:
 rspec farm_spec.rb
 ```
 
-![Eep! Look at all those errors!](../screenies/require-relative.png "Eep! Look at all those errors!")
+![Eep! Look at all those errors!](../screenies/farm/require-relative.png "Eep! Look at all those errors!")
 
 Well, that doesn’t look good! What happened there? Well, at the very top of the output is a single line:
 
@@ -41,7 +41,7 @@ and run `rspec` again:
 rspec farm_spec.rb
 ```
 
-![Well that looks good, doesn’t it?](../screenies/no-examples.png "Well that looks good, doesn’t it?")
+![Well that looks good, doesn’t it?](../screenies/farm/no-examples.png "Well that looks good, doesn’t it?")
 
 Better! Or is it? It looks like all tests have passed, so can we go home now? No yet: the output tells us `no examples found`. That’s because there are no tests to perform – we haven’t written them yet!
 

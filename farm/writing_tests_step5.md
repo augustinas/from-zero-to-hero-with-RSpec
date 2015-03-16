@@ -1,7 +1,7 @@
 ####Extending Animals – Step 5####
 Having animals on the Farm is great, but they’re all generic. We can’t tell if they’re edible, or the stuff they produce is edible. So let’s create some specific animals, starting with our beloved Cow:
 
-![Cows go “Moo!”](../screenies/cow-testing-rspec.png "Cows go “Moo!”")
+![Cows go “Moo!”](../screenies/farm/cow-testing-rspec.png "Cows go “Moo!”")
 
 Before I go on to show you the output of these new tests, let’s stop to discuss a few lines:
 
@@ -41,13 +41,13 @@ One further thing to note is that where brackets are optional in Ruby, they are 
 
 After creating a basic, empty Cow class in the `farm.rb` file, the results gained are:
 
-![Are you sure Cows go “Moo!”?](../screenies/cow-testing-failed.png "Are you sure Cows go “Moo!”?")
+![Are you sure Cows go “Moo!”?](../screenies/farm/cow-testing-failed.png "Are you sure Cows go “Moo!”?")
 
 Once again that is a lot of output, but you should have enough information and knowledge to fix the issues yourself. As before, you can use `rspec farm_spec.rb --fail-fast` to address each test one-at-a-time. I have added my solution to the page in case you get stuck, but give it a go yourself first.
 
-![I’m sure Cows go “Moo!”](../screenies/cow-testing-ruby.png "I’m sure Cows go “Moo!”")
+![I’m sure Cows go “Moo!”](../screenies/farm/cow-testing-ruby.png "I’m sure Cows go “Moo!”")
 
-![Yup, Cows definitely go “Moo!”](../screenies/cow-testing-passed.png "Yup, Cows definitely go “Moo!”")
+![Yup, Cows definitely go “Moo!”](../screenies/farm/cow-testing-passed.png "Yup, Cows definitely go “Moo!”")
 
 Try adding some more animals yourself to experiment. You could add Sheep, Chickens, Sheepdogs, Pigs, Bulls, Camels, Llamas, Giraffes…whatever you like!
 

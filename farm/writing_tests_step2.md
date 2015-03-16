@@ -1,9 +1,9 @@
 ####Writing the first test – Step 2####
 Going back to the English description of the project in Step 0, the first thing we outlined was that there was going to be a farm. So lets test that a farm exists:
 
-![describe Farm](../screenies/describe-farm.png "describe Farm")
+![describe Farm](../screenies/farm/describe-farm.png "describe Farm")
 
-![Oh oh! Not again!](../screenies/describe-farm-output.png "Oh oh! Not again!")
+![Oh oh! Not again!](../screenies/farm/describe-farm-output.png "Oh oh! Not again!")
 
 Another load of errors. Again we can trace the error by looking at the first line of the output:
 ```
@@ -12,18 +12,18 @@ uninitialized constant Farm (NameError)
 ```
 So on line 3 of our test file there is an `uninitialized constant Farm`. In other words, the test file is looking for a `Farm` class, but can’t find it. So let’s fix that by adding it to our `farm.rb`:
 
-![class Farm](../screenies/class-farm.png "class Farm")
+![class Farm](../screenies/farm/class-farm.png "class Farm")
 
 and then rerun the test suite:
 
-![Same as before](../screenies/class-farm-output.png "Same as before")
+![Same as before](../screenies/farm/class-farm-output.png "Same as before")
 
 No errors, but we still haven’t done any _useful_ testing. All that’s being tested at this point is that there is a declaration of a Farm class in the code.
 
 ####Writing the first _real_ test – Step 2½####
 Let’s add some more commands to `farm_spec.rb` to test that the Farm class is actually creating instances when it is being initialised:
 
-![Farm instances!](../screenies/farm-instances.png "Farm instances!")
+![Farm instances!](../screenies/farm/farm-instances.png "Farm instances!")
 
 OK, so what the foobar is going on here? Lines 3 and 7 form a block that describes a class called `Farm`, which should behave in the ways described inside the block. At the moment there is only one behaviour that is being described.
 
@@ -41,7 +41,7 @@ I know that’s a little contrived – obviously a freshly created Farm instance
 
 So, what happens when `rspec farm_spec.rb` is run?
 
-![Progress!](../screenies/farm-instances-output.png "Progress!")
+![Progress!](../screenies/farm/farm-instances-output.png "Progress!")
 
 Yey! A test has been run and passed! Great work!
 
