@@ -29,4 +29,4 @@ Perfect!
 
 [← Writing the first test – Step 2](./writing_tests_step2.md)
 
-[Adding animals – Step 4 →](./writing_tests_step4.md)
+[Adding Animals – Step 4 →](./writing_tests_step4.md)
