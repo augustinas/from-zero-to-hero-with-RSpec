@@ -5,11 +5,15 @@ Going back to Step 0 again, we mentioned that we would like to keep track of the
 
 …well, see that’s not so easy – other than the explicit instance of Farm we create to test that Farms can exist as Farms, we have no way of accessing the new Farm to test it further. We could always create a new Farm object for each test, but then we’re not testing the contents of the same Farm each time. Thus we need to tweak the test file a little first.
 
+![Introducing let](../screenies/farm/let-all.png "Introducing let")
+
+Now, instead of creating the Farm object inside the test expression, the `let` creates a single object for us before any of the tests are run. We can hand this to a variable `farm` (referenced as a symbol `:farm` in the argument to let) which can then be referenced in the tests. The test string has also been updated to reflect the changes in the test expression.
+
+You can also use `before :all` to get the same effect. Note, however, that this method will return a `nil` if the variable doesn’t exist, which can happen if the variable is mistyped in the RSpec file. Using `let` ensures that these errors are caught with `NoNameError` instead. However, the advantage to `before :all` is that it creates an instance variable that you can then reference from outside the test block.
+
 ![Introducing before :all](../screenies/farm/before-all.png "Introducing before :all")
 
-Now, instead of creating the Farm object inside the test expression, the `before :all` creates a single object for us before any of the tests are run. We can hand this to a variable `@farm` which can then be referenced in the tests. The test string has also been updated to reflect the changes in the test expression.
-
-Had we wanted to create a new Farm object for each test, we could’ve used `before :each` instead of `before :all`.
+Had we wanted to create a new Farm object for each test, we could’ve used `let!(:symbol)` or `before :each` instead of `let(:symbol)` or `before :all`.
 
 Now that we have a reference to a Farm object, we can write tests to check the number of animals and machines on that Farm:
 

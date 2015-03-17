@@ -7,7 +7,7 @@ Before I go on to show you the output of these new tests, let’s stop to discus
 
 ```ruby
 it "is an instance of Animal" do
-  expect(@cow).to be_an(Animal)
+  expect(cow).to be_an(Animal)
 end
 ```
 
@@ -15,7 +15,7 @@ This is checking to see that the Cow class extends Animal so that it inherits al
 
 ```ruby
 it "knows it is food" do
-  expect(@cow).to be_food
+  expect(cow).to be_food
 end
 ```
 
@@ -23,7 +23,7 @@ Remember how in Step 2½ (and, in fact, immediately above!) I converted the Ruby
 
 ```ruby
 it "knows it is food" do
-  expect(@cow.food?).to be
+  expect(cow.food?).to be
 end
 ```
 
@@ -31,13 +31,13 @@ or even:
 
 ```ruby
 it "knows it is food" do
-  expect(@cow.food?).to eq true
+  expect(cow.food?).to eq true
 end
 ```
 
 It is worth noting that in addition to the ‘be’ change, there is also a change from ‘has’ to ‘have’; for example the `has_item?` Ruby method becomes `have_item` RSpec test. Relish RSpec has more information on this concept in their [predicate matchers](https://www.relishapp.com/rspec/rspec-expectations/v/3-2/docs/built-in-matchers/predicate-matchers) page.
 
-One further thing to note is that where brackets are optional in Ruby, they are also optional in RSpec. I could easily have written `expect(@cow.products).to include("Milk")` on line 65, for example.
+One further thing to note is that where brackets are optional in Ruby, they are also optional in RSpec. I could easily have written `expect(cow.products).to include("Milk")` on line 65, for example.
 
 After creating a basic, empty Cow class in the `farm.rb` file, the results gained are:
 
