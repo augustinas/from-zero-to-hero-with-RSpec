@@ -1,8 +1,8 @@
 #From Zero - What the hell is testing, and why do developers use it?#
 
-Rspec is a 'testing framework', we'l come back to that in a second, but first lets discuss what is testing?
+Rspec is a 'testing framework'. We'll come back to what that means in a second, but first let's discuss: what is testing?
 
-Whether you realise it or not, you've already tested your code. If your new to coding you've likely done it manually, something like:
+Whether you realise it or not, you've already tested your code. If you're new to coding you've likely done it manually, something like:
 
 - Written some awesome code
 - Saved the file
@@ -14,7 +14,7 @@ Whether you realise it or not, you've already tested your code. If your new to c
 - Ran it more times to check it still worked
 - Then repeated the whole process over and over, each time you add to the code? Or have a new idea?
 
-Already knowing 'Developers are lazy', you may have already thought to yourself. "Dang! There's gotta be a less repetitive way of doing this?"
+Already knowing 'Developers are lazy', you may have already thought to yourself: "Dang! There's gotta be a less repetitive way of doing this?"
 
 That's where testing frameworks come in. It's like automating the boring, repetitive, none-creative part of being a developer!
 

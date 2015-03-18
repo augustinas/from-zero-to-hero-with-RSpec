@@ -53,20 +53,23 @@ Runs the nearest specification to a line number supplied.
 Rspec gives the ability to define specs as "pending", which are specs that are awaiting update and can exist in the *_spec.rb file but will not run(see last case for exception), instead theyvwill display as pending. The great thing about this is that you are still reminded each time you run rspec that the test is still to be completed so it is not forgotten.
 
 A pending spec will give a response from rspec like this:
->MacBook-Pro:longest rob$ rspec
->
->longest_word
->  finds longest word (PENDING: Temporarily skipped with xit)
->  checks sentence is a string
->
->Pending: (Failures listed here are expected and do not affect your suite's status)
->
->  1) longest_word finds longest word
->     # Temporarily skipped with xit
->     # ./spec/02-longest-word_spec.rb:4
->
->Finished in 0.00137 seconds (files took 0.09882 seconds to load)
->2 examples, 0 failures, 1 pending
+
+```
+MacBook-Pro:longest rob$ rspec
+
+longest_word
+  finds longest word (PENDING: Temporarily skipped with xit)
+  checks sentence is a string
+
+Pending: (Failures listed here are expected and do not affect your suite's status)
+
+  1) longest_word finds longest word
+     # Temporarily skipped with xit
+     # ./spec/02-longest-word_spec.rb:4
+
+Finished in 0.00137 seconds (files took 0.09882 seconds to load)
+2 examples, 0 failures, 1 pending
+```
 
 
 There are various methods of setting a spec to pending that have different results including:
