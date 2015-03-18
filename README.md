@@ -11,6 +11,8 @@
 
 - [Extended Topics - Configuration, Customisation, Matchers ...](./more_info.md)
 
+- [TDD and BDD?](./TDDandBDD.md)
+
 - [Powering Up - Where To Learn More, Get Better & Other Resources To Nail Your RSpec Superpowers!](./online_resources.md)
 
 - [Installation Troubleshooting (a helping hand to Linux users)](./installation_issues.md)
