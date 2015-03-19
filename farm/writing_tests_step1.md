@@ -43,7 +43,7 @@ rspec farm_spec.rb
 
 ![Well that looks good, doesn’t it?](../screenies/farm/no-examples.png "Well that looks good, doesn’t it?")
 
-Better! Or is it? It looks like all tests have passed, so can we go home now? No yet: the output tells us `no examples found`. That’s because there are no tests to perform – we haven’t written them yet!
+Better! Or is it? It looks like all tests have passed, so can we go home now? Not yet: the output tells us `no examples found`. That’s because there are no tests to perform – we haven’t written them yet!
 
 [← A little preamble – Step 0](./writing_tests_preamble.md)
 

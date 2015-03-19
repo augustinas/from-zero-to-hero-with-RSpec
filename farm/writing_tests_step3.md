@@ -19,7 +19,7 @@ Now that we have a reference to a Farm object, we can write tests to check the n
 
 ![Testing for numbers of farmyard items](../screenies/farm/farm-numbers-rspec.png "Testing for numbers of farmyard items")
 
-It should be fairly straight-forward to see what is going on: we are running a test to see if `@farm`’s instance variables `number_of_animals` and `number_of_machines` are initialised to zero. Running `rspec` gives:
+It should be fairly straight-forward to see what is going on: we are running a test to see if `farm`’s instance variables `number_of_animals` and `number_of_machines` are initialised to zero. Running `rspec` gives:
 
 ![Boy that’s a lot of red text!](../screenies/farm/farm-numbers-failed.png "Boy that’s a lot of red text!")
 
