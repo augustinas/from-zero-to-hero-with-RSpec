@@ -6,7 +6,7 @@ There is a lot of different software packages available for the implemetiation o
 ```bash
 gem install rspec
 ```
-Terminal will inform you that six new gems have been installed and that's us ready to go. There is a lot of RSpec parameters to tweak and improve the workflow, but we left that for [later](./more_info.md). Trouble installing? Check out our [troubleshooting tips](./other_issues.md). For those running on Linux, we have some additional [setup tips](./installation_issues.md).
+Terminal will inform you that six new gems have been installed and that's us ready to go. There is a lot of RSpec parameters to tweak and improve the workflow, but we left that for [later](../more_info.md). Trouble installing? Check out our [troubleshooting tips](../other_issues.md). For those running on Linux, we have some additional [setup tips](../installation_issues.md).
 
 Once we have installed successfully, let's set up a working environment for our small project. First, create project's folder:
 ```bash
