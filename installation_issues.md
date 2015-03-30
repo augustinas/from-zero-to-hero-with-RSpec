@@ -20,8 +20,8 @@ rvm get stable
 
 # Now fix your Ruby installation!
 rvm install 2.0.0 # The version of Ruby recommended at the beginning of the course.
-rvm install ruby --latest # The latest version of Ruby, whatever that happens to be. Note the version number when it appears!
-rvm --default use [version number from previous command]
+rvm install ruby --latest # The latest version of Ruby, whatever that happens to be.
+rvm --default use --latest
 
 # Then fix the other bits that have been hacked apart:
 # Run any/all commands below that you have already run on the course so far:
